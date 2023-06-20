@@ -1,0 +1,31 @@
+#include<conio.h>
+#include<stdio.h>
+int main()
+{
+	int a[3][3],b[3][3],multi[3][3],i,j; //variable declaration and 3 2d array define
+	printf("Enter The First Matrix No:-");//showing for 1st matrix input
+	for(i=0;i<3;i++)//looping for 1st matrix input
+	{
+		for(j=0;j<3;j++)
+		scanf("%d",&a[i][j]);//matrix input
+	}
+	printf("Enter The 2nd Matrix No:-");//showing for 2nd matrix input
+	for(i=0;i<3;i++)//looping for 2nd matrix input
+	{
+		for(j=0;j<3;j++)
+		scanf("%d",&b[i][j]);//2nd matrix input
+	}
+		for(i=0;i<3;i++)//multiple for loop
+	{
+		for(j=0;j<3;j++)
+		multi[i][j]=a[j][i]*b[i][j];//multiple both matrix
+	}
+	for(i=0;i<3;i++)//print multiple no of matrix
+	{
+		for(j=0;j<3;j++)
+		printf("%d\t",multi[i][j]);
+		printf("\n");
+	}
+	getch();
+	return 0;
+}
